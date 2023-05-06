@@ -1,0 +1,105 @@
+.titulo_home{
+    text-align: center;
+    font-weight: 500;
+    font-size: 50px;
+    line-height: 58px;
+    color: #D5F5EE;
+}
+
+.container_main_home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: left;
+
+    
+
+    .link_plantinha{
+        text-decoration: none;
+        .container_post{
+            background-color: #F5F5F5;
+            height: 30rem;
+            width: 20rem;
+            margin: 20px ;
+            border-radius: 20px;
+            box-shadow: 0 5px 10px #0c090938;
+    
+            .container_img{
+                display: flex;
+                justify-content: center;
+                padding-top: 3rem;
+    
+                .img_plantinha{
+                    /* mudar tamanho quando for a imagem da platinha */
+                    position: absolute;
+                    width: 15rem;
+                    height: 15rem;
+                }
+            }
+    
+            .infos_plantinha{
+                padding-top: 15rem;
+                padding-left: 2rem;
+    
+                .nome_platinha{
+                    font-size: 30px;
+                    font-weight: 500;
+                    margin: 2rem 0 0 0;
+                    color: #00483d;
+                }
+                .descricao_platinha{
+                    font-weight: 300;
+                    font-size: 20px;
+                    margin: 0.5rem 0 0 0;
+                    color: #00483d;
+                }
+            }
+        }
+    }
+
+    
+
+    .container_adicionar_post{
+        background-color: #2A9681;
+        height: 30rem;
+        width: 20rem;
+        margin: 20px ;
+        border-radius: 20px;
+        box-shadow: 0 5px 10px #0c090938;
+
+        .p_adicionar_plantinha{
+            margin: 0;
+            padding-top: 6rem;
+            font-weight: 400;
+            font-size: 25px;
+            text-align: center;
+            color: #F5F5F5;
+        }
+        .h2_plus{
+            margin: 0;
+            font-weight: 400;
+            font-size:4rem;
+            text-align: center;
+            color: #F5F5F5;
+        }
+        
+
+    }
+    .container_adicionar_post:hover{
+        cursor: pointer;
+        transition: 0.5s;
+        transform: scale(1.03);
+    }
+    
+}
+
+@media screen and (max-width: 800px){
+    .container_main_home{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-left: 0; 
+    }
+}
+

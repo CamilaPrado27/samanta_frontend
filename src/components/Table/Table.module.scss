@@ -1,0 +1,27 @@
+table td, table th {
+
+    border-bottom: 1px solid #2A9681;
+    padding: 8px;
+    margin: 0 2rem 0 2rem;
+    color: #00483D;
+}
+
+.tabela_centralizada{
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: aqua;
+
+    .th_name{
+        margin: 0 2rem 0 2rem;
+    }
+}
+
+@media screen and (max-width: 800px){
+    table td, table th{
+        border-bottom: 1px solid #97AEA9;
+        color: #97AEA9;
+    }
+}

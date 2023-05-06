@@ -1,0 +1,213 @@
+.div_voltar_home{
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 1rem;
+        margin-left: 5vw;
+
+
+        width: 10rem;
+        height: 2rem;
+
+        .link_home{
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: #F5F5F5;
+            width: 10rem;
+            height: 2rem;
+            .p_voltar_home{
+                margin: 0 ;
+                font-size: 20px;
+            }
+        }
+    }
+
+
+
+.div_main_plantinha{
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    width: 90vw;
+    height: 90vh;
+    background-color: #F5F5F5;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px #0c090938;
+
+    .div_esquerda{
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 100%;
+        border-radius: 20px 0 0 20px;
+
+
+        .img_plantinha{
+            width: 70%;
+        }
+
+        .div_nome_plantinha{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .h3_nome_plantinha{
+                margin-top: 0;
+                margin-bottom: 0;
+                color: #00483D;
+                font-size: 40px;
+                font-weight: 500;
+            }
+    
+            .p_nome_cientifico_plantinha{
+                font-size: 20px;
+                color: #00483D;
+                margin-top: 0;  
+            }
+        }
+    }
+
+    .div_centro{
+        display: flex;
+        flex-direction: column;
+        width: 30%;
+        height: 100%;
+
+        .div_atualizacao{
+            display: flex;
+            flex-direction: row;
+            align-items: baseline;
+            .p_plantinha_att{
+                padding-left: 5%;
+                color: #00483D;
+                font-size: 30px ;
+            }
+            .p_atualizacao{
+                color: #2A9681;
+                font-size: 20px;
+                padding-left: 10%;
+            }
+        }
+
+        .p_progress_bar{
+            margin-left: 5%;
+            text-align: center;
+            width: 7rem;
+            height: 1.5rem;
+
+            color: #F5F5F5;
+            background-color: #2A9681;
+            border-radius: 20px;
+        }
+
+        .div_progress_bar{
+            width: 90%;
+            height: 1rem;
+            background-color: #737373;
+            margin-left: auto;
+            margin-right: auto;
+            border-radius: 20px;
+        }
+
+        .h3_infos_plantinha{
+            margin-bottom: 0;
+            font-weight: 400;
+            font-size: 30px;
+            color: #00483D;
+            padding-left:10%;
+        }
+
+        .p_informarcaoes_plantinha{
+            text-align: justify;
+            color: #2A9681;
+            padding: 0 5% 0 5%;
+        }
+    }
+
+    .div_direita{
+        display: flex;
+        flex-direction: column;
+        width: 40%;
+        height: 100%;
+        border-radius: 0 20px 20px 0;
+        
+        .h3_historico{
+            margin-bottom: 0;
+            font-weight: 400;
+            font-size: 30px;
+            color: #00483D;
+            padding-left:10%;
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    .div_main_plantinha{
+        flex-direction: column;
+        height: 150vh;
+        background-color: #00483D;
+        box-shadow: none;
+        
+        .div_esquerda{
+            display: flex;
+            flex-direction: row-reverse;
+            background-color: white;
+            border-radius: 20px;
+            width: 100%;
+            height: 30vh;
+            box-shadow: 0 5px 10px #0c090938;
+
+            .img_plantinha{
+                padding-top: 0;
+                margin-left: 2rem;
+                width: 20%;
+                height: 100%;
+            }
+            .div_nome_plantinha{
+                margin-right: 2rem;
+            }
+        }
+
+        .div_centro{
+            width: 100%;
+            border-radius: 20px;
+
+            .div_atualizacao{
+
+                .p_plantinha_att{
+    
+                    color: #D5F5EE;
+                    margin-bottom: 0;
+                }
+    
+                .p_atualizacao{
+                    color: #97AEA9;
+                }
+            }
+
+            .h3_infos_plantinha{
+                color: #D5F5EE;
+            }
+
+            .p_informarcaoes_plantinha{
+                color: #97AEA9;
+            }
+            
+        }
+
+        .div_direita{
+            width: 100%;
+            .h3_historico{
+                color: #D5F5EE;
+            }
+        }
+
+    }
+}
